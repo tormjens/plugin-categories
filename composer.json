@@ -1,0 +1,14 @@
+{
+    "name": "tormorten/plugin-categories2",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Tor Morten Jensen",
+            "email": "tormorten@tormorten.no"
+        }
+    ],
+    "require": {
+    	"philo/laravel-blade": "2.*",
+        "usmanhalalit/pixie": "~1.0"
+    }
+}

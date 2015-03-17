@@ -1,0 +1,62 @@
+<?php $__env->startSection( 'title', __( 'Plugin Categories', 'plugin_categories' ) ); ?>
+
+<?php $__env->startSection( 'sidebar' ); ?>
+
+	<?php echo $__env->make('category.new', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection( 'content' ); ?>
+	
+	<h3><?php echo __( 'All Categories', 'plugin_categories' ); ?></h3>
+
+	<table class="wp-list-table widefat fixed striped tags">
+		<thead>
+			<tr>
+				<th scope="col" id="name" class="manage-column column-name  desc" style="">
+					<span><?php echo __( 'Name' ); ?></span>
+				</th>
+				<th scope="col" id="posts" class="manage-column column-posts num  desc" style="">
+					<span><?php echo __( 'Total', 'plugin_categories' ); ?></span>
+				</th>	
+			</tr>
+		</thead>
+
+		<tbody id="the-list" data-wp-lists="list:tag">
+			<?php foreach($categories as $category): ?>
+				<tr id="tag-1">
+					<td class="name column-name">
+						<strong>
+							<a class="row-title" href="plugins.php?page=plugin_categories&amp;action=edit&amp;id=<?php echo $category->id; ?>"><?php echo $category->name; ?></a>
+						</strong><br>
+						<div class="row-actions">
+							<span class="edit">
+								<a href="plugins.php?page=plugin_categories&amp;action=edit&amp;id=<?php echo $category->id; ?>"><?php echo __( 'Edit', 'plugin_categories' ); ?></a> | 
+							</span>
+							<span class="delete">
+								<a href="plugins.php?page=plugin_categories&amp;action=delete&amp;id=<?php echo $category->id; ?>"><?php echo __( 'Delete', 'plugin_categories' ); ?></a>
+							</span>
+						</div>
+					</td>
+					<td class="posts column-posts">
+						<a href="plugins.php?plugin_category_name=uncategorized">2</a>
+					</td>
+				</tr>
+			<?php endforeach; ?>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<th scope="col" id="name" class="manage-column column-name  desc" style="">
+					<span><?php echo __( 'Name' ); ?></span>
+				</th>
+				<th scope="col" id="posts" class="manage-column column-posts num  desc" style="">
+					<span><?php echo __( 'Total', 'plugin_categories' ); ?></span>
+				</th>	
+			</tr>
+		</tfoot>
+
+	</table>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make( 'master' , array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

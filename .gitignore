@@ -1,0 +1,6 @@
+/node_modules
+/release
+/plugin
+/vendor
+/.sass-cache
+composer.lock

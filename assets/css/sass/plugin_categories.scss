@@ -1,0 +1,32 @@
+/**
+ * Plugin Categories
+ * http://tormorten.no
+ *
+ * Copyright (c) 2015 Tor Morten Jensen
+ * Licensed under the GPLv2+ license.
+ */
+
+ .plugin_category_page {
+
+ 	.sidebar {
+ 		width: 30%;
+ 		float: left;
+ 	}
+
+	.content {
+		width: 70%;
+		float:left;
+	}
+
+ }
+
+ .plugins-php {
+
+ 	#categories {
+ 		width: 20%;
+ 	}
+
+ 	#name {
+ 		width: 25%;
+ 	}
+ }

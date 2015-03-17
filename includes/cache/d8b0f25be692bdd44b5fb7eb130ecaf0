@@ -1,0 +1,11 @@
+
+<h3><?php echo __( 'Create a new category', 'plugin_categories' ); ?></h3>
+
+<form method="post" action="">
+
+	<?php echo wp_nonce_field( 'create', 'plugin_categories' ); ?>
+
+	
+	<?php echo $__env->make( 'category.partials.form' , array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+</form>

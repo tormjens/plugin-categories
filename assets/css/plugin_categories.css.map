@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;AAUE,8BAAS;EACR,KAAK,EAAE,GAAG;EACV,KAAK,EAAE,IAAI;AAGb,8BAAS;EACR,KAAK,EAAE,GAAG;EACV,KAAK,EAAC,IAAI;;AAOV,wBAAY;EACX,KAAK,EAAE,GAAG;AAGX,kBAAM;EACL,KAAK,EAAE,GAAG",
+"sources": ["sass/plugin_categories.scss"],
+"names": [],
+"file": "plugin_categories.css"
+}

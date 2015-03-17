@@ -1,0 +1,11 @@
+
+<h3><?php echo __( 'Edit category', 'plugin_categories' ); ?>: <?php echo $category->name; ?></h3>
+
+<form method="post" action="">
+
+	<?php echo wp_nonce_field( 'edit', 'plugin_categories' ); ?>
+
+
+	<?php echo $__env->make( 'category.partials.form', compact( 'category' ) , array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+</form>

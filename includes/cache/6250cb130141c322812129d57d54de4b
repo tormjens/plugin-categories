@@ -1,0 +1,14 @@
+<div class="wrap plugin_category_page">
+	
+	
+	<h2><?php echo $__env->yieldContent('title'); ?></h2>
+	
+	<div class="sidebar">
+		<?php echo $__env->yieldContent('sidebar'); ?>
+	</div>
+	
+	<div class="content">
+		<?php echo $__env->yieldContent('content'); ?>
+	</div>
+
+</div>
